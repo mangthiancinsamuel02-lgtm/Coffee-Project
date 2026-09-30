@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Shopping cart for Bean Boutique."
+    >
+
+    <title>Cart | Bean Boutique</title>
+
+    <link rel="stylesheet" href="../coffee.project css/coffee.css">
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <a href="homepage.html" class="logo">
+
+            <span class="logo-icon">☕</span>
+
+            <span>
+                <strong>Bean Boutique</strong>
+                <small>Brewed with character</small>
+            </span>
+
+        </a>
+
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+
+        <nav id="mainNav">
+
+            <a href="homepage.html">Home</a>
+            <a href="coffeeSelection.html">Coffee</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="events.html">Events</a>
+            <a href="offers.html">Offers</a>
+
+            <a class="active" href="cart.html">
+                Cart
+                <span class="cart-count">0</span>
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <img
+            src="../image-library/19.jpg"
+            alt="Coffee cup and coffee beans"
+            class="page-hero-image"
+        >
+
+        <div class="page-hero-overlay">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    YOUR BASKET
+                </p>
+
+                <h1>
+                    Ready when you are.
+                </h1>
+
+                <p>
+                    Your selected products are saved in this browser.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container cart-layout">
+
+
+            <div class="cart-items-panel">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            ORDER
+                        </p>
+
+                        <h2>
+                            Your items
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        id="clearCart"
+                        class="text-button"
+                    >
+                        Clear Cart
+                    </button>
+
+                </div>
+
+
+                <div id="cartItems">
+
+                </div>
+
+
+                <div
+                    id="emptyCart"
+                    class="empty-cart"
+                >
+
+                    <img
+                        src="../image-library/19.jpg"
+                        alt="Coffee cup and beans on a simple background"
+                    >
+
+                    <h3>
+                        Your cart is empty.
+                    </h3>
+
+                    <p>
+                        Add some coffee or equipment to get started.
+                    </p>
+
+                    <a
+                        href="coffeeSelection.html"
+                        class="btn btn-primary"
+                    >
+                        Shop Coffee
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <aside class="summary-card">
+
+                <h2>
+                    Order Summary
+                </h2>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong id="cartSubtotal">
+                        $0.00
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Delivery
+                    </span>
+
+                    <strong id="cartDelivery">
+                        $0.00
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="cartTotal">
+                        $0.00
+                    </strong>
+
+                </div>
+
+
+                <button
+                    id="checkoutBtn"
+                    class="btn btn-primary checkout-btn"
+                >
+                    Continue to Checkout
+                </button>
+
+
+                <p class="checkout-note">
+                    Prototype checkout only.
+                    No real payment is taken.
+                </p>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>
+                Bean Boutique
+            </h3>
+
+            <p>
+                Specialty coffee, useful gear and community events.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Explore
+            </h3>
+
+            <a href="coffeeSelection.html">Coffee</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="events.html">Events</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Visit
+            </h3>
+
+            <p>
+                24 Market Lane<br>
+                Downtown
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Bean Boutique.
+
+    </div>
+
+</footer>
+
+
+<script src="../coffee.project js/coffee.js"></script>
+
+</body>
+</html>
