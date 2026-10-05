@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Bean Boutique specialty coffee, brewing equipment and community events.">
-
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Bean Boutique specialty coffee, brewing equipment and community events."
+    >
     <title>Bean Boutique | Home</title>
-
-    <link rel="stylesheet" href="../coffee.project css/coffee.css">
+    <link
+        rel="stylesheet"
+        href="../coffee.project css/coffee.css"
+    >
 </head>
 
 <body>
@@ -19,29 +24,68 @@
     <div class="container header-inner">
 
         <a href="homepage.html" class="logo">
-            <span class="logo-icon">☕</span>
+
+            <span class="logo-icon">
+                ☕️
+            </span>
 
             <span>
-                <strong>Bean Boutique</strong>
-                <small>Brewed with character</small>
+
+                <strong>
+                    Bean Boutique
+                </strong>
+
+                <small>
+                    Brewed with character
+                </small>
+
             </span>
+
         </a>
 
-        <button class="menu-toggle" id="menuToggle">
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+        >
             ☰
         </button>
 
+
         <nav id="mainNav">
 
-            <a class="active" href="homepage.html">Home</a>
-            <a href="coffeeSelection.html">Coffee</a>
-            <a href="equipment.html">Equipment</a>
-            <a href="events.html">Events</a>
-            <a href="offers.html">Offers</a>
+            <a
+                class="active"
+                href="homepage.html"
+            >
+                Home
+            </a>
+
+            <a href="coffeeSelection.html">
+                Coffee
+            </a>
+
+            <a href="equipment.html">
+                Equipment
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="offers.html">
+                Offers
+            </a>
 
             <a href="cart.html">
+
                 Cart
-                <span class="cart-count">0</span>
+
+                <span class="cart-count">
+                    0
+                </span>
+
             </a>
 
         </nav>
@@ -50,11 +94,12 @@
 
 </header>
 
-
 <main>
+
     <section class="hero">
 
         <div class="container hero-grid">
+
 
             <div class="hero-content">
 
@@ -63,22 +108,37 @@
                 </p>
 
                 <h1>
+
                     Good coffee,
-                    <span>good company.</span>
+
+                    <span>
+                        good company.
+                    </span>
+
                 </h1>
 
+
                 <p>
+
                     Discover carefully selected beans, practical brewing
                     gear and welcoming coffee events, all in one place.
+
                 </p>
 
                 <div class="hero-buttons">
 
-                    <a href="coffeeSelection.html" class="btn btn-primary">
+                    <a
+                        href="coffeeSelection.html"
+                        class="btn btn-primary"
+                    >
                         Explore Coffee
                     </a>
 
-                    <a href="events.html" class="btn btn-secondary">
+
+                    <a
+                        href="events.html"
+                        class="btn btn-secondary"
+                    >
                         See Events
                     </a>
 
@@ -87,30 +147,140 @@
                 <div class="hero-stats">
 
                     <div>
-                        <strong>12+</strong>
-                        <span>Coffee Profiles</span>
+
+                        <strong>
+                            12+
+                        </strong>
+
+                        <span>
+                            Coffee Profiles
+                        </span>
+
                     </div>
 
-                    <div>
-                        <strong>6</strong>
-                        <span>Brewing Methods</span>
-                    </div>
 
                     <div>
-                        <strong>4.9/5</strong>
-                        <span>Community Rating</span>
+
+                        <strong>
+                            6
+                        </strong>
+
+                        <span>
+                            Brewing Methods
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            4.9/5
+                        </strong>
+
+                        <span>
+                            Community Rating
+                        </span>
+
                     </div>
 
                 </div>
 
             </div>
 
+            <div class="hero-slider" id="homeSlider">
 
-            <div class="hero-image">
-                <img
-                    src="../image-library/1.jpg"
-                    alt="Freshly brewed specialty coffee beside coffee beans"
+                <div class="home-slide active">
+
+                    <img
+                        src="../image-library/1.jpg"
+                        alt="Freshly brewed specialty coffee beside coffee beans"
+                    >
+
+                </div>
+
+                <div class="home-slide">
+
+                    <img
+                        src="../image-library/new image 2.jpg"
+                        alt="Premium coffee brewing equipment"
+                    >
+
+                </div>
+
+                <div class="home-slide">
+
+                    <img
+                        src="../image-library/new image 1.jpg"
+                        alt="Specialty coffee beans and freshly brewed coffee"
+                    >
+
+                </div>
+
+                <div class="home-slide">
+
+                    <img
+                        src="../image-library/new image 3.jpg"
+                        alt="Specialty coffee brewing setup"
+                    >
+
+                </div>
+
+                <button
+                    class="slider-btn slider-prev"
+                    id="sliderPrev"
+                    type="button"
+                    aria-label="Previous image"
                 >
+                    <
+                </button>
+
+                <button
+                    class="slider-btn slider-next"
+                    id="sliderNext"
+                    type="button"
+                    aria-label="Next image"
+                >
+                    >
+                </button>
+
+                <div
+                    class="slider-dots"
+                    id="sliderDots"
+                >
+
+                    <button
+                        class="slider-dot active"
+                        type="button"
+                        data-slide="0"
+                        aria-label="Go to image 1"
+                    ></button>
+
+
+                    <button
+                        class="slider-dot"
+                        type="button"
+                        data-slide="1"
+                        aria-label="Go to image 2"
+                    ></button>
+
+
+                    <button
+                        class="slider-dot"
+                        type="button"
+                        data-slide="2"
+                        aria-label="Go to image 3"
+                    ></button>
+
+
+                    <button
+                        class="slider-dot"
+                        type="button"
+                        data-slide="3"
+                        aria-label="Go to image 4"
+                    ></button>
+
+                </div>
 
             </div>
 
@@ -121,6 +291,7 @@
     <section class="section">
 
         <div class="container">
+
 
             <div class="section-heading">
 
@@ -136,14 +307,10 @@
 
                 </div>
 
-                <a href="coffeeSelection.html" class="text-link">
-                    View all coffee →
-                </a>
-
             </div>
 
-
             <div class="product-grid">
+
 
                 <article class="product-card">
 
@@ -166,15 +333,20 @@
                             Floral aroma, citrus brightness and a clean finish.
                         </p>
 
+
                         <div class="product-footer">
 
-                            <strong>$16.00</strong>
+                            <strong>
+                                $16.00
+                            </strong>
+
 
                             <button
                                 class="add-to-cart"
                                 data-id="coffee-ethiopia"
                                 data-name="Ethiopia Sunrise"
                                 data-price="16"
+                                type="button"
                             >
                                 Add
                             </button>
@@ -206,15 +378,20 @@
                             Chocolate notes, soft caramel sweetness and body.
                         </p>
 
+
                         <div class="product-footer">
 
-                            <strong>$15.00</strong>
+                            <strong>
+                                $15.00
+                            </strong>
+
 
                             <button
                                 class="add-to-cart"
                                 data-id="coffee-colombia"
                                 data-name="Colombia Cocoa"
                                 data-price="15"
+                                type="button"
                             >
                                 Add
                             </button>
@@ -224,6 +401,8 @@
                     </div>
 
                 </article>
+
+
 
                 <article class="product-card">
 
@@ -246,15 +425,20 @@
                             Nutty sweetness, milk chocolate and a smooth finish.
                         </p>
 
+
                         <div class="product-footer">
 
-                            <strong>$14.00</strong>
+                            <strong>
+                                $14.00
+                            </strong>
+
 
                             <button
                                 class="add-to-cart"
                                 data-id="coffee-brazil"
                                 data-name="Brazil Velvet"
                                 data-price="14"
+                                type="button"
                             >
                                 Add
                             </button>
@@ -265,15 +449,28 @@
 
                 </article>
 
+
             </div>
 
         </div>
 
     </section>
 
+    <div class="tagline">
+
+        <a
+            href="coffeeSelection.html"
+            class="text-link"
+        >
+            View all coffee →
+        </a>
+
+    </div>
+
     <section class="section story-section">
 
         <div class="container story-grid">
+
 
             <div class="story-image">
 
@@ -296,12 +493,18 @@
                 </h2>
 
                 <p>
+
                     We keep coffee approachable with clear tasting notes,
                     practical brewing advice and friendly events for
                     beginners and experienced brewers.
+
                 </p>
 
-                <a href="events.html" class="btn btn-dark">
+
+                <a
+                    href="events.html"
+                    class="btn btn-dark"
+                >
                     Meet the Community
                 </a>
 
@@ -314,6 +517,7 @@
     <section class="section">
 
         <div class="container">
+
 
             <div class="section-heading">
 
@@ -329,20 +533,29 @@
 
                 </div>
 
-                <a href="events.html" class="text-link">
+
+                <a
+                    href="events.html"
+                    class="text-link"
+                >
                     All events →
                 </a>
 
             </div>
 
 
+
             <div class="event-grid">
+
 
                 <article class="event-card">
 
-                    <strong>12</strong>
+                    <strong>
+                        12
+                    </strong>
 
                     <div>
+
                         <span class="tag">
                             Tasting
                         </span>
@@ -354,16 +567,19 @@
                         <p>
                             Compare three single-origin coffees with our roaster.
                         </p>
+
                     </div>
 
                 </article>
 
-
                 <article class="event-card">
 
-                    <strong>19</strong>
+                    <strong>
+                        19
+                    </strong>
 
                     <div>
+
                         <span class="tag">
                             Workshop
                         </span>
@@ -375,16 +591,21 @@
                         <p>
                             Learn a repeatable recipe for a clean cup.
                         </p>
+
                     </div>
 
                 </article>
 
 
+
                 <article class="event-card">
 
-                    <strong>26</strong>
+                    <strong>
+                        26
+                    </strong>
 
                     <div>
+
                         <span class="tag">
                             Community
                         </span>
@@ -396,9 +617,11 @@
                         <p>
                             Explore our small-batch roasting process.
                         </p>
+
                     </div>
 
                 </article>
+
 
             </div>
 
@@ -409,6 +632,7 @@
     <section class="newsletter">
 
         <div class="container newsletter-box">
+
 
             <div>
 
@@ -436,7 +660,10 @@
                     required
                 >
 
-                <button class="btn btn-primary">
+                <button
+                    class="btn btn-primary"
+                    type="submit"
+                >
                     Subscribe
                 </button>
 
@@ -446,16 +673,19 @@
 
     </section>
 
-</main>
 
+</main>
 
 <footer class="site-footer">
 
     <div class="container footer-grid">
 
+
         <div>
 
-            <h3>Bean Boutique</h3>
+            <h3>
+                Bean Boutique
+            </h3>
 
             <p>
                 Specialty coffee, useful gear and community events.
@@ -466,18 +696,30 @@
 
         <div>
 
-            <h3>Explore</h3>
+            <h3>
+                Explore
+            </h3>
 
-            <a href="coffeeSelection.html">Coffee</a>
-            <a href="equipment.html">Equipment</a>
-            <a href="events.html">Events</a>
+            <a href="coffeeSelection.html">
+                Coffee
+            </a>
+
+            <a href="equipment.html">
+                Equipment
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
 
         </div>
 
 
         <div>
 
-            <h3>Visit</h3>
+            <h3>
+                Visit
+            </h3>
 
             <p>
                 24 Market Lane<br>
@@ -490,6 +732,7 @@
 
         </div>
 
+
     </div>
 
 
@@ -501,8 +744,8 @@
 
 </footer>
 
-
 <script src="../coffee.project js/coffee.js"></script>
 
 </body>
+
 </html>
