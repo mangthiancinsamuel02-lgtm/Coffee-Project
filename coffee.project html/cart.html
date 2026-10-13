@@ -1,154 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <title>Your Cart | Bean Boutique</title>
 
-    <meta
-        name="description"
-        content="Shopping cart for Bean Boutique."
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <title>Cart | Bean Boutique</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
     <link rel="stylesheet" href="../coffee.project css/coffee.css">
-
 </head>
-
 
 <body>
 
-
 <header class="site-header">
-
     <div class="container header-inner">
 
         <a href="homepage.html" class="logo">
-
-            <span class="logo-icon">☕</span>
+            <span class="logo-icon">
+                <i class="fa-solid fa-mug-hot"></i>
+            </span>
 
             <span>
                 <strong>Bean Boutique</strong>
                 <small>Brewed with character</small>
             </span>
-
         </a>
 
-
-        <button class="menu-toggle" id="menuToggle">
-            ☰
+        <button class="menu-toggle" id="menuToggle" type="button">
+            <i class="fa-solid fa-bars"></i>
         </button>
 
-
         <nav id="mainNav">
-
             <a href="homepage.html">Home</a>
             <a href="coffeeSelection.html">Coffee</a>
             <a href="equipment.html">Equipment</a>
             <a href="events.html">Events</a>
             <a href="offers.html">Offers</a>
-
-            <a class="active" href="cart.html">
+            <a href="cart.html" class="active">
+                <i class="fa-solid fa-cart-shopping"></i>
                 Cart
                 <span class="cart-count">0</span>
             </a>
-
         </nav>
 
     </div>
-
 </header>
 
 
 <main>
 
     <section class="page-hero">
-
         <img
             src="../image-library/19.jpg"
-            alt="Coffee cup and coffee beans"
             class="page-hero-image"
-        >
+            alt="Coffee shopping">
 
         <div class="page-hero-overlay">
-
             <div class="container">
+                <p class="eyebrow">YOUR SHOPPING CART</p>
 
-                <p class="eyebrow">
-                    YOUR BASKET
-                </p>
-
-                <h1>
-                    Ready when you are.
-                </h1>
+                <h1>Ready for your next brew?</h1>
 
                 <p>
-                    Your selected products are saved in this browser.
+                    Review your coffee and equipment before checkout.
                 </p>
-
             </div>
-
         </div>
-
     </section>
 
 
     <section class="section">
-
         <div class="container cart-layout">
 
-
-            <div class="cart-items-panel">
+            <div>
 
                 <div class="section-heading">
-
                     <div>
-
-                        <p class="eyebrow">
-                            ORDER
-                        </p>
-
-                        <h2>
-                            Your items
-                        </h2>
-
+                        <p class="eyebrow">CART ITEMS</p>
+                        <h2>Your basket</h2>
                     </div>
-
 
                     <button
                         id="clearCart"
                         class="text-button"
-                    >
+                        type="button">
                         Clear Cart
                     </button>
-
                 </div>
 
 
-                <div id="cartItems">
-
-                </div>
+                <div id="cartItems"></div>
 
 
-                <div
-                    id="emptyCart"
-                    class="empty-cart"
-                >
+                <div id="emptyCart" class="empty-cart">
 
                     <img
-                        src="../image-library/19.jpg"
-                        alt="Coffee cup and beans on a simple background"
-                    >
+                        src="../image-library/1.jpg"
+                        alt="Empty coffee cart">
 
-                    <h3>
-                        Your cart is empty.
-                    </h3>
+                    <h3>Your cart is empty.</h3>
 
                     <p>
                         Add some coffee or equipment to get started.
@@ -156,8 +124,7 @@
 
                     <a
                         href="coffeeSelection.html"
-                        class="btn btn-primary"
-                    >
+                        class="btn btn-primary">
                         Shop Coffee
                     </a>
 
@@ -168,127 +135,80 @@
 
             <aside class="summary-card">
 
-                <h2>
-                    Order Summary
-                </h2>
-
+                <h2>Order Summary</h2>
 
                 <div class="summary-row">
-
-                    <span>
-                        Subtotal
-                    </span>
-
-                    <strong id="cartSubtotal">
-                        $0.00
-                    </strong>
-
+                    <span>Subtotal</span>
+                    <strong id="cartSubtotal">$0.00</strong>
                 </div>
-
 
                 <div class="summary-row">
-
-                    <span>
-                        Delivery
-                    </span>
-
-                    <strong id="cartDelivery">
-                        $0.00
-                    </strong>
-
+                    <span>Delivery</span>
+                    <strong id="cartDelivery">$0.00</strong>
                 </div>
-
 
                 <div class="summary-row total">
-
-                    <span>
-                        Total
-                    </span>
-
-                    <strong id="cartTotal">
-                        $0.00
-                    </strong>
-
+                    <span>Total</span>
+                    <strong id="cartTotal">$0.00</strong>
                 </div>
-
 
                 <button
                     id="checkoutBtn"
-                    class="btn btn-primary checkout-btn"
-                >
-                    Continue to Checkout
+                    class="btn btn-dark checkout-btn"
+                    type="button">
+                    <i class="fa-solid fa-lock"></i>
+                    Checkout
                 </button>
 
-
                 <p class="checkout-note">
-                    Prototype checkout only.
-                    No real payment is taken.
+                    Checkout is a prototype for this assignment.
                 </p>
 
             </aside>
 
         </div>
-
     </section>
 
 </main>
 
 
 <footer class="site-footer">
-
     <div class="container footer-grid">
 
         <div>
-
-            <h3>
-                Bean Boutique
-            </h3>
-
+            <h3>Bean Boutique</h3>
             <p>
-                Specialty coffee, useful gear and community events.
+                Specialty coffee, brewing equipment,
+                and community events.
             </p>
-
         </div>
 
-
         <div>
-
-            <h3>
-                Explore
-            </h3>
-
+            <h3>Explore</h3>
+            <a href="homepage.html">Home</a>
             <a href="coffeeSelection.html">Coffee</a>
             <a href="equipment.html">Equipment</a>
             <a href="events.html">Events</a>
-
         </div>
-
 
         <div>
-
-            <h3>
-                Visit
-            </h3>
-
-            <p>
-                24 Market Lane<br>
-                Downtown
-            </p>
-
+            <h3>Visit</h3>
+            <p>24 Market Lane</p>
+            <p>Downtown</p>
+            <p>Mon–Sat 8–18</p>
         </div>
 
     </div>
 
-
     <div class="footer-bottom">
-
-        © 2026 Bean Boutique.
-
+        © 2026 Bean Boutique Coffee Shop.
     </div>
-
 </footer>
 
 
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="../coffee.project js/coffee.js"></script>
 
 </body>

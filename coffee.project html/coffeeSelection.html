@@ -1,118 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <title>Coffee Selection | Bean Boutique</title>
 
-    <meta
-        name="description"
-        content="Shop specialty coffee at Bean Boutique."
-    >
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Coffee | Bean Boutique</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Toastify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- Flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
     <link rel="stylesheet" href="../coffee.project css/coffee.css">
-
 </head>
-
 
 <body>
 
-
 <header class="site-header">
-
     <div class="container header-inner">
 
         <a href="homepage.html" class="logo">
-
-            <span class="logo-icon">☕</span>
+            <span class="logo-icon">
+                <i class="fa-solid fa-mug-hot"></i>
+            </span>
 
             <span>
                 <strong>Bean Boutique</strong>
                 <small>Brewed with character</small>
             </span>
-
         </a>
 
-
-        <button class="menu-toggle" id="menuToggle">
-            ☰
+        <button class="menu-toggle" id="menuToggle" type="button">
+            <i class="fa-solid fa-bars"></i>
         </button>
 
-
         <nav id="mainNav">
-
             <a href="homepage.html">Home</a>
-
-            <a class="active" href="coffeeSelection.html">
-                Coffee
-            </a>
-
-            <a href="equipment.html">
-                Equipment
-            </a>
-
-            <a href="events.html">
-                Events
-            </a>
-
-            <a href="offers.html">
-                Offers
-            </a>
-
+            <a href="coffeeSelection.html" class="active">Coffee</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="events.html">Events</a>
+            <a href="offers.html">Offers</a>
             <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
                 Cart
                 <span class="cart-count">0</span>
             </a>
-
         </nav>
 
     </div>
-
 </header>
 
 
 <main>
 
     <section class="page-hero">
-
         <img
             src="../image-library/6.jpg"
-            alt="Specialty coffee beans and brewed coffee"
             class="page-hero-image"
-        >
-
+            alt="Coffee beans">
 
         <div class="page-hero-overlay">
-
             <div class="container">
+                <p class="eyebrow">COFFEE SELECTION</p>
 
-                <p class="eyebrow">
-                    OUR COFFEE
-                </p>
-
-                <h1>
-                    Find your next favourite cup.
-                </h1>
+                <h1>Find your perfect cup.</h1>
 
                 <p>
-                    Explore single origins, balanced blends and darker roasts.
+                    Explore our selection of single-origin coffees,
+                    blends, dark roasts, and decaffeinated options.
                 </p>
-
             </div>
-
         </div>
-
     </section>
 
-    <section class="section">
 
+    <section class="section">
         <div class="container">
 
             <div class="filter-box">
@@ -121,467 +92,328 @@
                     type="search"
                     id="coffeeSearch"
                     placeholder="Search coffee..."
-                >
-
+                    aria-label="Search coffee">
 
                 <button
                     class="filter-btn active"
                     data-filter="all"
-                >
+                    type="button">
                     All
                 </button>
 
                 <button
                     class="filter-btn"
                     data-filter="single"
-                >
+                    type="button">
                     Single Origin
                 </button>
 
                 <button
                     class="filter-btn"
                     data-filter="blend"
-                >
+                    type="button">
                     Blend
                 </button>
 
                 <button
                     class="filter-btn"
                     data-filter="dark"
-                >
+                    type="button">
                     Dark Roast
                 </button>
 
+                <button
+                    class="filter-btn"
+                    data-filter="decaf"
+                    type="button">
+                    Decaf
+                </button>
+
             </div>
+
+            <p id="coffeeStatus" class="tagline">
+                Showing 8 coffees.
+            </p>
+
 
             <div class="product-grid" id="coffeeGrid">
 
                 <article
                     class="product-card coffee-card"
                     data-category="single"
-                    data-search="ethiopia sunrise floral citrus single origin"
-                >
+                    data-search="ethiopia sunrise citrus floral single origin">
 
-                    <img
-                        src="../image-library/2 .jpg"
-                        alt="Ethiopian single origin coffee"
-                    >
+                    <img src="../image-library/new updated image 1.jpg" alt="Ethiopia Sunrise">
 
                     <div class="product-body">
-
-                        <span class="tag">
-                            Single Origin
-                        </span>
-
-                        <h2>
-                            Ethiopia Sunrise
-                        </h2>
-
-                        <p>
-                            Floral aroma, citrus brightness and a clean finish.
-                        </p>
+                        <span class="tag">Single Origin</span>
+                        <h3>Ethiopia Sunrise</h3>
+                        <p>Bright citrus and floral notes.</p>
+                        <p>Contains - 250(g)</p>
 
                         <div class="product-footer">
-
-                            <strong>
-                                $16.00
-                            </strong>
+                            <strong>$16.00</strong>
 
                             <button
                                 class="add-to-cart"
                                 data-id="coffee-ethiopia"
                                 data-name="Ethiopia Sunrise"
                                 data-price="16"
-                            >
+                                type="button">
                                 Add to Cart
                             </button>
-
                         </div>
-
                     </div>
-
                 </article>
+
 
                 <article
                     class="product-card coffee-card"
                     data-category="blend"
-                    data-search="colombia cocoa chocolate caramel house favourite blend"
-                >
+                    data-search="colombia cocoa chocolate blend">
 
-                    <img
-                        src="../image-library/3.jpg"
-                        alt="Colombian coffee beans"
-                    >
+                    <img src="../image-library/new updated image 2.jpg" alt="Colombia Cocoa">
 
                     <div class="product-body">
-
-                        <span class="tag">
-                            House Favourite
-                        </span>
-
-                        <h2>
-                            Colombia Cocoa
-                        </h2>
-
-                        <p>
-                            Chocolate notes, caramel sweetness and body.
-                        </p>
+                        <span class="tag">Blend</span>
+                        <h3>Colombia Cocoa</h3>
+                        <p>Sweet cocoa with a balanced finish.</p>
+                        <p>Contains - 250(g)</p>
 
                         <div class="product-footer">
-
-                            <strong>
-                                $15.00
-                            </strong>
+                            <strong>$15.00</strong>
 
                             <button
                                 class="add-to-cart"
                                 data-id="coffee-colombia"
                                 data-name="Colombia Cocoa"
                                 data-price="15"
-                            >
+                                type="button">
                                 Add to Cart
                             </button>
-
                         </div>
-
                     </div>
-
                 </article>
+
 
                 <article
                     class="product-card coffee-card"
                     data-category="blend"
-                    data-search="brazil velvet nutty chocolate balanced blend"
-                >
+                    data-search="brazil velvet chocolate smooth blend">
 
-                    <img
-                        src="../image-library/4.jpg"
-                        alt="Brazilian coffee beans"
-                    >
+                    <img src="../image-library/new updated image 3.jpg" alt="Brazil Velvet">
 
                     <div class="product-body">
-
-                        <span class="tag">
-                            Balanced
-                        </span>
-
-                        <h2>
-                            Brazil Velvet
-                        </h2>
-
-                        <p>
-                            Nutty sweetness, milk chocolate and a smooth finish.
-                        </p>
+                        <span class="tag">Blend</span>
+                        <h3>Brazil Velvet</h3>
+                        <p>Rich chocolate and silky body.</p>
+                        <p>Contains - 250(g)</p>
 
                         <div class="product-footer">
-
-                            <strong>
-                                $14.00
-                            </strong>
+                            <strong>$14.00</strong>
 
                             <button
                                 class="add-to-cart"
                                 data-id="coffee-brazil"
                                 data-name="Brazil Velvet"
                                 data-price="14"
-                            >
+                                type="button">
                                 Add to Cart
                             </button>
-
                         </div>
-
                     </div>
-
                 </article>
+
 
                 <article
                     class="product-card coffee-card"
                     data-category="dark"
-                    data-search="dark roast night owl strong bold rich"
-                >
+                    data-search="night owl dark roast strong coffee">
 
-                    <img
-                        src="../image-library/7.jpg"
-                        alt="Dark roasted coffee beans"
-                    >
+                    <img src="../image-library/new updated image 4.jpg" alt="Night Owl">
 
                     <div class="product-body">
-
-                        <span class="tag">
-                            Dark Roast
-                        </span>
-
-                        <h2>
-                            Night Owl
-                        </h2>
-
-                        <p>
-                            Rich cocoa, toasted nuts and a bold finish.
-                        </p>
+                        <span class="tag">Dark Roast</span>
+                        <h3>Night Owl</h3>
+                        <p>Bold, rich, and full-bodied.</p>
+                        <p>Contains - 250(g)</p>
 
                         <div class="product-footer">
-
-                            <strong>
-                                $17.00
-                            </strong>
+                            <strong>$17.00</strong>
 
                             <button
                                 class="add-to-cart"
                                 data-id="coffee-night-owl"
                                 data-name="Night Owl"
                                 data-price="17"
-                            >
+                                type="button">
                                 Add to Cart
                             </button>
-
                         </div>
-
                     </div>
-
                 </article>
-                
+
+
                 <article
                     class="product-card coffee-card"
                     data-category="single"
-                    data-search="kenya berry bloom berry red fruit floral single origin"
-                >
-                    <img
-                        src="../image-library/new image 5.jpg"
-                        alt="Kenyan single origin coffee beans"
-                    >
+                    data-search="kenya berry bloom berry single origin">
+
+                    <img src="../image-library/new updated image 5.jpg" alt="Kenya Berry Bloom">
 
                     <div class="product-body">
-
-                        <span class="tag">
-                               Single Origin
-                        </span>
-
-                        <h2>
-                            Kenya Berry Bloom
-                        </h2>
-
-                        <p>
-                           Bright berry flavours, red fruit sweetness and
-                           a delicate floral finish.
-                        </p>
+                        <span class="tag">Single Origin</span>
+                        <h3>Kenya Berry Bloom</h3>
+                        <p>Fresh berry flavours and bright acidity.</p>
+                        <p>Contains - 250(g)</p>
 
                         <div class="product-footer">
-
-                            <strong>
-                                    $17.00
-                            </strong>
+                            <strong>$17.00</strong>
 
                             <button
-                                   class="add-to-cart"
-                                   data-id="coffee-kenya"
-                                   data-name="Kenya Berry Bloom"
-                                   data-price="17"
-                                   >
-                                     Add to Cart
+                                class="add-to-cart"
+                                data-id="coffee-kenya"
+                                data-name="Kenya Berry Bloom"
+                                data-price="17"
+                                type="button">
+                                Add to Cart
                             </button>
-
                         </div>
-
                     </div>
-
                 </article>
-        
+
+
                 <article
                     class="product-card coffee-card"
                     data-category="blend"
-                    data-search="guatemala cocoa roast chocolate caramel nutty blend coffee"
-                >
-                    <img
-                       src="../image-library/new image 6.jpg"
-                       alt="Guatemalan roasted coffee beans"
-                    >
+                    data-search="guatemala cocoa roast cocoa caramel spice">
+
+                    <img src="../image-library/new updated image 6.jpg" alt="Guatemala Cocoa Roast">
 
                     <div class="product-body">
-
-                        <span class="tag">
-                              House Blend
-                        </span>
-
-                        <h2>
-                            Guatemala Cocoa Roast
-                        </h2>
-
-                        <p>
-                            Rich cocoa notes, caramel sweetness and a smooth
-                             nutty finish. 
-                        </p>
+                        <span class="tag">Blend</span>
+                        <h3>Guatemala Cocoa Roast</h3>
+                        <p>Cocoa, caramel, and gentle spice.</p>
+                        <p>Contains - 250(g)</p>
 
                         <div class="product-footer">
-
-                            <strong>
-                                    $15.50
-                            </strong>
+                            <strong>$15.50</strong>
 
                             <button
-                                   class="add-to-cart"
-                                   data-id="coffee-guatemala"
-                                   data-name="Guatemala Cocoa Roast"
-                                   data-price="15.50"
-                                   >
-                                     Add to Cart
+                                class="add-to-cart"
+                                data-id="coffee-guatemala"
+                                data-name="Guatemala Cocoa Roast"
+                                data-price="15.5"
+                                type="button">
+                                Add to Cart
                             </button>
-
                         </div>
-
                     </div>
-
                 </article>
-                
+
+
                 <article
-                     class="product-card coffee-card"
-                     data-category="decaf"
-                     data-search="colombia decaf classic smooth caramel chocolate decaffeinated coffee"
-                >
-                    <img
-                       src="../image-library/new image 7.jpg"
-                       alt="Colombian decaf coffee beans"
-                    >
+                    class="product-card coffee-card"
+                    data-category="decaf"
+                    data-search="colombia decaf classic decaffeinated coffee">
+
+                    <img src="../image-library/new updated image 7.jpg" alt="Colombia Decaf Classic">
 
                     <div class="product-body">
-
-                        <span class="tag">
-                               Decaf
-                        </span>
-
-                        <h2>
-                            Colombia Decaf Classic
-                        </h2>
-
-                        <p>
-                           Smooth caramel sweetness, milk chocolate notes
-                           and a balanced mellow finish.
-                        </p>
+                        <span class="tag">Decaf</span>
+                        <h3>Colombia Decaf Classic</h3>
+                        <p>Smooth flavour without the caffeine.</p>
+                        <p>Contains - 250(g)</p>
 
                         <div class="product-footer">
-
-                            <strong>
-                                    $15.00
-                            </strong>
+                            <strong>$15.00</strong>
 
                             <button
-                                   class="add-to-cart"
-                                   data-id="coffee-colombia-decaf"
-                                   data-name="Colombia Decaf Classic"
-                                   data-price="15.00"
-                                   >
-                                     Add to Cart
+                                class="add-to-cart"
+                                data-id="coffee-colombia-decaf"
+                                data-name="Colombia Decaf Classic"
+                                data-price="15"
+                                type="button">
+                                Add to Cart
                             </button>
-
                         </div>
-
                     </div>
-
                 </article>
-                <!-- new 4 -->
+
+
                 <article
-                     class="product-card coffee-card"
-                     data-category="single"
-                     data-search="costa rica honey process coffee citrus honey sweet tropical single origin"
-                >
-                    <img
-                       src="../image-library/new image 8.jpg"
-                       alt="Costa Rican honey process coffee beans"
-                    >
+                    class="product-card coffee-card"
+                    data-category="single"
+                    data-search="costa rica honey process sweet honey coffee">
+
+                    <img src="../image-library/new updated image 8.jpg" alt="Costa Rica Honey Process">
 
                     <div class="product-body">
-
-                        <span class="tag">
-                               Single Origin
-                        </span>
-
-                        <h2>
-                            Costa Rica Honey Process
-                        </h2>
-
-                        <p>
-                            Sweet honey character, citrus brightness and
-                            gentle tropical fruit flavours.
-                        </p>
+                        <span class="tag">Single Origin</span>
+                        <h3>Costa Rica Honey Process</h3>
+                        <p>Sweet, clean, and naturally balanced.</p>
+                        <p>Contains - 250(g)</p>
 
                         <div class="product-footer">
-
-                            <strong>
-                                    $18.00
-                            </strong>
+                            <strong>$18.00</strong>
 
                             <button
-                                   class="add-to-cart"
-                                   data-id="coffee-costa-rica-honey-process"
-                                   data-name="Costa Rica Honey Process"
-                                   data-price="18.00"
-                                   >
-                                     Add to Cart
+                                class="add-to-cart"
+                                data-id="coffee-costa-rica-honey-process"
+                                data-name="Costa Rica Honey Process"
+                                data-price="18"
+                                type="button">
+                                Add to Cart
                             </button>
-
                         </div>
-
                     </div>
-
                 </article>
 
             </div>
 
         </div>
-
     </section>
 
 </main>
 
 
 <footer class="site-footer">
-
     <div class="container footer-grid">
 
         <div>
-
             <h3>Bean Boutique</h3>
-
             <p>
-                Specialty coffee, useful gear and community events.
+                Specialty coffee, brewing equipment,
+                and community events.
             </p>
-
         </div>
 
-
         <div>
-
             <h3>Explore</h3>
-
             <a href="homepage.html">Home</a>
             <a href="equipment.html">Equipment</a>
             <a href="events.html">Events</a>
-
+            <a href="offers.html">Offers</a>
         </div>
-
 
         <div>
-
             <h3>Visit</h3>
-
-            <p>
-                24 Market Lane<br>
-                Downtown
-            </p>
-
+            <p>24 Market Lane</p>
+            <p>Downtown</p>
+            <p>Mon–Sat 8–18</p>
         </div>
 
     </div>
 
-
     <div class="footer-bottom">
-
-        © 2026 Bean Boutique.
-
+        © 2026 Bean Boutique Coffee Shop.
     </div>
-
 </footer>
 
 
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="../coffee.project js/coffee.js"></script>
 
 </body>

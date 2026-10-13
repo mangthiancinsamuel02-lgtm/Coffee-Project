@@ -2,782 +2,366 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-    <meta
-        name="description"
-        content="Coffee events and workshops at Bean Boutique."
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Events | Bean Boutique</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link
         rel="stylesheet"
-        href="../coffee.project css/coffee.css"
-    >
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="stylesheet" href="../coffee.project css/coffee.css">
 </head>
 
 <body>
 
 <header class="site-header">
-
     <div class="container header-inner">
 
-
-        <a
-            href="homepage.html"
-            class="logo"
-        >
-
+        <a href="homepage.html" class="logo">
             <span class="logo-icon">
-                ☕️
+                <i class="fa-solid fa-mug-hot"></i>
             </span>
-
 
             <span>
-
-                <strong>
-                    Bean Boutique
-                </strong>
-
-                <small>
-                    Brewed with character
-                </small>
-
+                <strong>Bean Boutique</strong>
+                <small>Brewed with character</small>
             </span>
-
         </a>
 
-        <button
-            class="menu-toggle"
-            id="menuToggle"
-            type="button"
-        >
-            ☰
+        <button class="menu-toggle" id="menuToggle" type="button">
+            <i class="fa-solid fa-bars"></i>
         </button>
 
-
-
         <nav id="mainNav">
-
-            <a href="homepage.html">
-                Home
-            </a>
-
-
-            <a href="coffeeSelection.html">
-                Coffee
-            </a>
-
-
-            <a href="equipment.html">
-                Equipment
-            </a>
-
-
-            <a
-                class="active"
-                href="events.html"
-            >
-                Events
-            </a>
-
-
-            <a href="offers.html">
-                Offers
-            </a>
-
-
+            <a href="homepage.html">Home</a>
+            <a href="coffeeSelection.html">Coffee</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="offers.html">Offers</a>
             <a href="cart.html">
-
+                <i class="fa-solid fa-cart-shopping"></i>
                 Cart
-
-                <span class="cart-count">
-                    0
-                </span>
-
+                <span class="cart-count">0</span>
             </a>
-
         </nav>
 
     </div>
-
 </header>
-
 
 
 <main>
 
-<section class="page-hero">
+    <section class="page-hero">
+        <img
+            src="../image-library/13.jpg"
+            class="page-hero-image"
+            alt="Coffee event">
+
+        <div class="page-hero-overlay">
+            <div class="container">
+                <p class="eyebrow">BEAN BOUTIQUE EVENTS</p>
+
+                <h1>Learn, taste, and connect.</h1>
+
+                <p>
+                    Join our coffee workshops and community events.
+                </p>
+            </div>
+        </div>
+    </section>
 
 
-    <img
-        src="../image-library/13.jpg"
-        alt="Coffee community event"
-        class="page-hero-image"
-    >
-
-
-    <div class="page-hero-overlay">
-
+    <section class="section">
         <div class="container">
 
+            <div class="event-image-grid">
 
-            <p class="eyebrow">
-                COFFEE COMMUNITY
-            </p>
+                <article class="event-image-card">
+                    <img src="../image-library/14.jpg" alt="Latte Art Basics">
+
+                    <div>
+                        <span class="tag">Saturday</span>
+
+                        <h2>Latte Art Basics</h2>
+
+                        <p>
+                            Learn the foundations of milk steaming and simple latte art.
+                        </p>
+
+                        <div class="event-details">
+                            <div class="event-detail-row">
+                                <span class="event-detail-label">Time</span>
+                                <span>10:00 – 12:00</span>
+                            </div>
+
+                            <div class="event-detail-row">
+                                <span class="event-detail-label">Duration</span>
+                                <span>2 hours</span>
+                            </div>
+
+                            <div class="event-detail-row">
+                                <span class="event-detail-label">Location</span>
+                                <span>Bean Boutique Coffee Lab</span>
+                            </div>
+                        </div>
+
+                        <button
+                            class="btn btn-primary event-select"
+                            data-event="Latte Art Basics"
+                            type="button">
+                            Register
+                        </button>
+                    </div>
+                </article>
 
 
-            <h1>
-                Learn, taste and connect.
-            </h1>
+                <article class="event-image-card">
+                    <img src="../image-library/15.jpg" alt="Meet the Roaster">
+
+                    <div>
+                        <span class="tag">Saturday</span>
+
+                        <h2>Meet the Roaster</h2>
+
+                        <p>
+                            Discover the roasting process and how flavour develops.
+                        </p>
+
+                        <div class="event-details">
+                            <div class="event-detail-row">
+                                <span class="event-detail-label">Time</span>
+                                <span>14:00 – 16:00</span>
+                            </div>
+
+                            <div class="event-detail-row">
+                                <span class="event-detail-label">Duration</span>
+                                <span>2 hours</span>
+                            </div>
+
+                            <div class="event-detail-row">
+                                <span class="event-detail-label">Location</span>
+                                <span>Bean Boutique Roasting Room</span>
+                            </div>
+                        </div>
+
+                        <button
+                            class="btn btn-primary event-select"
+                            data-event="Meet the Roaster"
+                            type="button">
+                            Register
+                        </button>
+                    </div>
+                </article>
 
 
-            <p>
-                Friendly workshops, tasting sessions and coffee
-                experiences for curious people of every skill level.
-            </p>
+                <article class="event-image-card">
+                    <img src="../image-library/16.jpg" alt="Pour-over Workshop">
 
+                    <div>
+                        <span class="tag">Sunday</span>
 
-        </div>
+                        <h2>Pour-over Workshop</h2>
 
-    </div>
+                        <p>
+                            Learn how grind size, water, and pouring affect your coffee.
+                        </p>
 
-</section>
+                        <div class="event-details">
+                            <div class="event-detail-row">
+                                <span class="event-detail-label">Time</span>
+                                <span>11:00 – 13:00</span>
+                            </div>
 
-<section class="section">
+                            <div class="event-detail-row">
+                                <span class="event-detail-label">Duration</span>
+                                <span>2 hours</span>
+                            </div>
 
-    <div class="container">
+                            <div class="event-detail-row">
+                                <span class="event-detail-label">Location</span>
+                                <span>Bean Boutique Brewing Studio</span>
+                            </div>
+                        </div>
 
-
-        <div class="section-heading">
-
-            <div>
-
-                <p class="eyebrow">
-                    UPCOMING EVENTS
-                </p>
-
-
-                <h2>
-                    Come and learn with us
-                </h2>
+                        <button
+                            class="btn btn-primary event-select"
+                            data-event="Pour-over Workshop"
+                            type="button">
+                            Register
+                        </button>
+                    </div>
+                </article>
 
             </div>
 
         </div>
+    </section>
 
 
+    <section class="section light-section">
+        <div class="container">
 
-        <div class="event-image-grid">
+            <div class="three-columns">
 
-            <article class="event-image-card">
-
-                <img
-                    src="../image-library/14.jpg"
-                    alt="Barista creating latte art"
-                >
-
-
-                <div>
-
-
-                    <span class="tag">
-                        Workshop
-                    </span>
-
-
-                    <h2>
-                        Latte Art Basics
-                    </h2>
-
-                    <p class="event-description">
-
-                        Learn the essential techniques for creating
-                        smooth steamed milk and simple latte art.
-                        This beginner-friendly workshop covers milk
-                        texturing, pouring technique and basic designs
-                        such as hearts and simple tulips.
-
+                <div class="info-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Learn</h3>
+                    <p>
+                        Build practical coffee skills with guided workshops.
                     </p>
-
-                    <div class="event-details">
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Time:
-                            </span>
-
-                            <span>
-                                Saturday, 10:00 AM – 12:00 PM
-                            </span>
-
-                        </div>
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Duration:
-                            </span>
-
-                            <span>
-                                2 hours
-                            </span>
-
-                        </div>
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Location:
-                            </span>
-
-                            <span>
-                                Bean Boutique Coffee Lab
-                            </span>
-
-                        </div>
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Map:
-                            </span>
-
-                            <a
-                                href="location-link is here"
-                                target="_blank"
-                                class="location-link"
-                            >
-                                View location on Google Maps →
-                            </a>
-
-                        </div>
-
-
-                    </div>
-
-                    <button
-                        class="btn btn-primary event-select"
-                        data-event="Latte Art Basics"
-                        type="button"
-                    >
-                        Register
-                    </button>
-
-
                 </div>
 
-            </article>
-
-            <article class="event-image-card">
-
-
-                <img
-                    src="../image-library/15.jpg"
-                    alt="Coffee roaster working with freshly roasted beans"
-                >
-
-
-                <div>
-
-
-                    <span class="tag">
-                        Tasting
-                    </span>
-
-
-                    <h2>
-                        Meet the Roaster
-                    </h2>
-
-                    <p class="event-description">
-
-                        Discover what happens behind the scenes
-                        during the coffee roasting process. Our roaster
-                        will explain how green coffee beans are selected,
-                        roasted and developed to bring out different
-                        flavours and aromas.
-
+                <div class="info-card">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Connect</h3>
+                    <p>
+                        Meet other coffee lovers in our local community.
                     </p>
-
-                    <div class="event-details">
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Time:
-                            </span>
-
-                            <span>
-                                Saturday, 2:00 PM – 4:00 PM
-                            </span>
-
-                        </div>
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Duration:
-                            </span>
-
-                            <span>
-                                2 hours
-                            </span>
-
-                        </div>
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Location:
-                            </span>
-
-                            <span>
-                                Bean Boutique Roasting Room
-                            </span>
-
-                        </div>
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Map:
-                            </span>
-
-                            <a
-                                href="location-link is here"
-                                target="_blank"
-                                class="location-link"
-                            >
-                                View location on Google Maps →
-                            </a>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <button
-                        class="btn btn-primary event-select"
-                        data-event="Meet the Roaster"
-                        type="button"
-                    >
-                        Register
-                    </button>
-
-
                 </div>
 
-            </article>
-
-            <article class="event-image-card">
-
-
-                <img
-                    src="../image-library/16.jpg"
-                    alt="Small group learning coffee brewing techniques"
-                >
-
-
-                <div>
-
-
-                    <span class="tag">
-                        Community
-                    </span>
-
-
-                    <h2>
-                        Pour-over Workshop
-                    </h2>
-
-                    <p class="event-description">
-
-                        Learn how to prepare a clean and balanced
-                        pour-over coffee using a simple repeatable
-                        brewing recipe. The session covers coffee
-                        grinding, water temperature, pouring technique
-                        and brewing time.
-
+                <div class="info-card">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h3>Enjoy</h3>
+                    <p>
+                        Taste coffee and enjoy a relaxed learning environment.
                     </p>
-
-                    <div class="event-details">
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Time:
-                            </span>
-
-                            <span>
-                                Sunday, 11:00 AM – 1:00 PM
-                            </span>
-
-                        </div>
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Duration:
-                            </span>
-
-                            <span>
-                                2 hours
-                            </span>
-
-                        </div>
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Location:
-                            </span>
-
-                            <span>
-                                Bean Boutique Brewing Studio
-                            </span>
-
-                        </div>
-
-
-                        <div class="event-detail-row">
-
-                            <span class="event-detail-label">
-                                Map:
-                            </span>
-
-                            <a
-                                href="location-link is here"
-                                target="_blank"
-                                class="location-link"
-                            >
-                                View location on Google Maps →
-                            </a>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <button
-                        class="btn btn-primary event-select"
-                        data-event="Pour-over Workshop"
-                        type="button"
-                    >
-                        Register
-                    </button>
-
-
                 </div>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section light-section">
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <div>
-
-                <p class="eyebrow">
-                    WHY JOIN US
-                </p>
-
-
-                <h2>
-                    More than just coffee
-                </h2>
 
             </div>
 
         </div>
+    </section>
 
 
+    <!-- Registration -->
+    <section class="section">
+        <div class="container">
 
-        <div class="three-columns">
-
-
-            <article class="info-card">
-
-                <h3>
-                    Learn Practical Skills
-                </h3>
-
-                <p>
-
-                    Build useful coffee-making skills through
-                    simple demonstrations and hands-on activities
-                    designed for beginners and experienced coffee
-                    lovers.
-
-                </p>
-
-            </article>
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">JOIN AN EVENT</p>
+                    <h2>Register now</h2>
+                </div>
+            </div>
 
 
+            <div class="form-container">
 
-            <article class="info-card">
+                <form id="eventForm" class="main-form">
 
-                <h3>
-                    Taste Different Coffees
-                </h3>
-
-                <p>
-
-                    Explore different origins, roast styles and
-                    brewing methods while learning how flavour
-                    and aroma change from one coffee to another.
-
-                </p>
-
-            </article>
+                    <label for="firstName">First Name</label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="first_name"
+                        placeholder="Enter your first name"
+                        required>
 
 
-
-            <article class="info-card">
-
-                <h3>
-                    Meet the Community
-                </h3>
-
-                <p>
-
-                    Meet other coffee lovers, share experiences
-                    and learn from our baristas and roasting team
-                    in a relaxed and welcoming environment.
-
-                </p>
-
-            </article>
+                    <label for="lastName">Last Name</label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="last_name"
+                        placeholder="Enter your last name"
+                        required>
 
 
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section">
-
-    <div class="container form-container">
+                    <label for="eventName">Select Event</label>
+                    <select id="eventName" name="event_name" required>
+                        <option value="">Choose an event</option>
+                        <option value="Latte Art Basics">Latte Art Basics</option>
+                        <option value="Meet the Roaster">Meet the Roaster</option>
+                        <option value="Pour-over Workshop">Pour-over Workshop</option>
+                    </select>
 
 
-        <div class="section-heading centered">
-
-            <p class="eyebrow">
-                RESERVE A PLACE
-            </p>
-
-
-            <h2>
-                Event registration
-            </h2>
+                    <label for="eventDate">Preferred Date</label>
+                    <input
+                        type="text"
+                        id="eventDate"
+                        name="event_date"
+                        placeholder="Choose a date"
+                        required>
 
 
-            <p>
-                Select an event and choose your preferred date.
-            </p>
+                    <label for="eventEmail">Email</label>
+                    <input
+                        type="email"
+                        id="eventEmail"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+
+                    <button class="btn btn-primary" type="submit">
+                        Register Now
+                    </button>
+
+                </form>
+
+            </div>
 
         </div>
-
-
-
-        <form
-            id="eventForm"
-            class="main-form"
-        >
-
-
-            <label for="eventName">
-                Event
-            </label>
-
-
-            <select
-                id="eventName"
-                required
-            >
-
-                <option value="">
-                    Select an event
-                </option>
-
-
-                <option value="Latte Art Basics">
-                    Latte Art Basics
-                </option>
-
-
-                <option value="Meet the Roaster">
-                    Meet the Roaster
-                </option>
-
-
-                <option value="Pour-over Workshop">
-                    Pour-over Workshop
-                </option>
-
-            </select>
-
-
-
-            <label for="eventDate">
-                Date
-            </label>
-
-
-            <input
-                type="date"
-                id="eventDate"
-                required
-            >
-
-
-
-            <label for="eventEmail">
-                Email
-            </label>
-
-
-            <input
-                type="email"
-                id="eventEmail"
-                placeholder="you@example.com"
-                required
-            >
-
-
-
-            <button
-                class="btn btn-primary"
-                type="submit"
-            >
-                Register
-            </button>
-
-
-        </form>
-
-    </div>
-
-</section>
-
+    </section>
 
 </main>
 
+
 <footer class="site-footer">
-
-
     <div class="container footer-grid">
 
-
         <div>
-
-            <h3>
-                Bean Boutique
-            </h3>
-
-
+            <h3>Bean Boutique</h3>
             <p>
-                Specialty coffee, useful gear and community events.
+                Specialty coffee, brewing equipment,
+                and community events.
             </p>
-
         </div>
 
-
-
         <div>
-
-            <h3>
-                Explore
-            </h3>
-
-
-            <a href="coffeeSelection.html">
-                Coffee
-            </a>
-
-
-            <a href="equipment.html">
-                Equipment
-            </a>
-
-
-            <a href="offers.html">
-                Offers
-            </a>
-
+            <h3>Explore</h3>
+            <a href="homepage.html">Home</a>
+            <a href="coffeeSelection.html">Coffee</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="offers.html">Offers</a>
         </div>
 
-
-
         <div>
-
-            <h3>
-                Visit
-            </h3>
-
-
-            <p>
-                24 Market Lane<br>
-                Downtown
-            </p>
-
-
-            <p>
-                Mon–Sat: 8:00–18:00
-            </p>
-
+            <h3>Visit</h3>
+            <p>24 Market Lane</p>
+            <p>Downtown</p>
+            <p>Mon–Sat 8–18</p>
         </div>
-
 
     </div>
-
-
 
     <div class="footer-bottom">
-
-        © 2026 Bean Boutique. All rights reserved.
-
+        © 2026 Bean Boutique Coffee Shop.
     </div>
-
-
 </footer>
 
 
-
-<script
-    src="../coffee.project js/coffee.js"
-></script>
-
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="../coffee.project js/coffee.js"></script>
 
 </body>
-
 </html>
